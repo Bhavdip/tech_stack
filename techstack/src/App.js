@@ -9,7 +9,7 @@ import LibraryList from './components/LibraryList';
 //fuctional component
 const App = () => (
   <Provider store={createStore(reducers)}>
-    <View>
+    <View style={{ flex: 1 }}>
       <Header screenTitle="Tech Stack" />
       <LibraryList />
     </View>
