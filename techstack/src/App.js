@@ -4,12 +4,14 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import { Header } from './components/common';
+import LibraryList from './components/LibraryList';
 
 //fuctional component
 const App = () => (
   <Provider store={createStore(reducers)}>
     <View>
       <Header screenTitle="Tech Stack" />
+      <LibraryList />
     </View>
   </Provider>
 );
